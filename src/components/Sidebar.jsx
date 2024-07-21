@@ -14,7 +14,7 @@ const Sidebar = () => {
         />
         </li>
         <li>
-          <Link to="/" className="p-8 hover:bg-gray-500 rounded-lg flex flex-col items-center justify-center w-12 h-12 bg-sky-900 text-white shadow-lg delay-100 transition-all">
+          <Link to="/" className="p-8 hover:bg-blue-800 rounded-lg flex flex-col items-center justify-center w-12 h-12 bg-blue-950 text-white shadow-lg delay-100 transition-all">
             <div className="flex flex-col items-center justify-center">
               <ListBulletIcon className="h-6 w-6 text-white" />
               <div className="text-sm font-medium mt-1">Place</div>

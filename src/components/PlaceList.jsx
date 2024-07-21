@@ -57,7 +57,7 @@ const PlaceList = () => {
     setPage(pageNumber);
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className="text-8xl justify-center align-middle">Loading...</p>;
   if (error) return <p>Error loading places.</p>;
 
   const paginatedPlaces = filteredPlaces.slice(

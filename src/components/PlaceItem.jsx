@@ -25,7 +25,7 @@ const PlaceItem = ({ place }) => {
                     ? `${place.operation_time[0].time_open} AM - ${place.operation_time[0].time_close} PM`
                     : "No data"}
                 </p>
-                <p className="text-gray-600 text-sm flex items-center">
+                <p className="text-blue-900 text-xs flex items-center">
                   <StarIcon className="w-4 h-4 mr-1" />
                   {place.rating}
                 </p>
