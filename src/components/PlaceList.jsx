@@ -101,18 +101,22 @@ const PlaceList = () => {
           <PlaceItem key={place.id} place={place} />
         ))}
       </div>
-      <div className="mt-4 flex justify-center">
-        <nav className="pagination flex gap-2">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index + 1}
-              className={`btn ${page === index + 1 ? 'btn-primary' : 'btn-secondary'}`}
-              onClick={() => handlePageChange(index + 1)}
-            >
-              {index + 1}
-            </button>
-          ))}
-        </nav>
+      <div className="mt-4 flex items-center justify-center gap-2">
+        <button
+          className={`btn ${page === 1 ? 'btn-disabled' : 'btn-primary'}`}
+          onClick={() => handlePageChange(page - 1)}
+          disabled={page === 1}
+        >
+          &lt; {/* Arrow Left */}
+        </button>
+        <span className="text-lg font-medium">{page}</span>
+        <button
+          className={`btn ${page === totalPages ? 'btn-disabled' : 'btn-primary'}`}
+          onClick={() => handlePageChange(page + 1)}
+          disabled={page === totalPages}
+        >
+          &gt; {/* Arrow Right */}
+        </button>
       </div>
     </div>
   );
