@@ -13,8 +13,8 @@ Advisory by ChatGPT
 
 Use Json File To be a Data set for api
 
-Installation Setups
-1.Pull Git Repository
-2.Run Command 'npm i'
-3.Check file in '../public/json/example_data.json' Ready to call data?
-4.Run Command 'npm run dev'
+- Installation Setups
+  - 1.Pull Git Repository
+  - 2.Run Command 'npm i'
+  - 3.Check file in '../public/json/example_data.json' Ready to call data?
+  - 4.Run Command 'npm run dev'
