@@ -104,7 +104,7 @@ const PlaceList = () => {
         ))}
       </div>
       {/* Pagination controls */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-4 w-full max-w-sm ">
+      <div className="flex items-center justify-center gap-2 mt-4 lg:absolute lg:bottom-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 sm:fixed sm:bottom-4 sm:left-1/2 sm:transform sm:-translate-x-1/2">
         <div className="flex items-center justify-center gap-2">
           <button
             className={`bg-blue-900 text-white px-4 py-2 rounded-xl shadow-md hover:bg-blue-600 ${
